@@ -1,0 +1,18 @@
+p{
+  color: red;
+}
+
+html{
+  font-size: 140px;
+}
+:root{
+  --c1: #a17b25
+}
+div{
+  display: flex;
+  animation: all .3s;
+  transform: translate(10px, 10px);
+  box-shadow:  0 0 5px 5px var(--c1);
+  border-radius: 4px;
+  transition: all .4s;
+}
