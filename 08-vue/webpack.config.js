@@ -1,31 +1,30 @@
-// 多页应用打包
+// vue 应用构建
+// vue-loader vue 13以上版本要配置下plugin
+// vue-template-compiler & vue 两者版本要一致
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin'); // 必须设置
 
 // todo 可以搭配 glob 遍历文件夹文件, 自动生成多页配置
 module.exports = {
   mode: 'development',
-  entry: {
-    home: path.resolve(__dirname, 'pages/home/index.js'),
-    login: path.resolve(__dirname, 'pages/login/index.js'),
-  },
+  entry: path.resolve(__dirname, 'src/main.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash:6].js',
     clean: true,
   },
+  module: {
+    rules: [{
+      test: /\.vue$/,
+      use: ['vue-loader'],
+    }],
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'home.html',
-      chunks: ['home'], // 制定对应模块
-      title: '首页',
+      title: 'vue2',
       template: path.resolve(__dirname, 'public.html')
     }),
-    new HtmlWebpackPlugin({
-      filename: 'login.html',
-      chunks: ['login'],
-      title: '登录',
-      template: path.resolve(__dirname, 'public.html')
-    })
+    new VueLoaderPlugin()
   ]
 }
