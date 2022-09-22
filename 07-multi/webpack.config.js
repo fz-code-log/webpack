@@ -12,7 +12,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash:6].js',
-    clean: true,
+    clean: true, // 构建前是否清空输出目录
+    // publicPath: '',// 资源引入公共路径前缀
+    // chunkFileName: 'js/[name]_chunk.js',// 非入口chunk的名称
+    // library:'jquery', // 作为库构建, 库名称
+    // libraryTarget :'window' // 作为库构建, 库挂载到什么对象上 浏览器:window; node:golbal; ...
   },
   plugins: [
     new HtmlWebpackPlugin({
