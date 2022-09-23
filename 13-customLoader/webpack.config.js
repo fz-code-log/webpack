@@ -1,6 +1,7 @@
 /* 自定义loader */
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { resolve } = require('path')
 
 module.exports = {
   mode: 'development',
@@ -18,17 +19,29 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        use: ['babel-loader', {
-          loader: path.resolve(__dirname, 'loaders/jsLoader.js'),
-          options:{
-            test:1
-          }
-        }]
+        use: ['babel-loader',
+        ]
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,
         type: 'javascript/auto', // 支持所有的模块化 , 包括 commomjs / AMD /  es module / 
-        use: [{
+        use: [
+          {
+            loader: path.resolve(__dirname, 'loaders/over-url-loader.js'),
+            options: {
+              maxSize: 10 * 1024,
+              mappingJson: path.resolve(__dirname, 'img2cdn.json'),
+              fallback:  (context)=>{
+                return new Promise((resolve)=>{
+                  console.log('进入自定义----');
+                  setTimeout((context) => {
+                    resolve('https://webpack.js.org/assets/icon-square-big.svg')
+                  }, 3*1000);
+                })
+              }
+            }
+          },
+          {
           loader: 'url-loader',
           options: {
             name: '[name].[hash:10].[ext]',
