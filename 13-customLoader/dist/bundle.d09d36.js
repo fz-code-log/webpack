@@ -9,26 +9,6 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./13-customLoader/image/bg_02.png":
-/*!*****************************************!*\
-  !*** ./13-customLoader/image/bg_02.png ***!
-  \*****************************************/
-/***/ (function(module) {
-
-eval("module.exports = \"https://webpack.js.org/assets/icon-square-big.svg\"\n\n//# sourceURL=webpack://webpack/./13-customLoader/image/bg_02.png?");
-
-/***/ }),
-
-/***/ "./13-customLoader/image/bilibili.png":
-/*!********************************************!*\
-  !*** ./13-customLoader/image/bilibili.png ***!
-  \********************************************/
-/***/ (function(module) {
-
-eval("module.exports = \"data:image/png;base64,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\"\n\n//# sourceURL=webpack://webpack/./13-customLoader/image/bilibili.png?");
-
-/***/ }),
-
 /***/ "./13-customLoader/index.js":
 /*!**********************************!*\
   !*** ./13-customLoader/index.js ***!
@@ -92,6 +72,26 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./image/bilibili.png */ \"./13-customLoader/image/bilibili.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./image/bg_02.png */ \"./13-customLoader/image/bg_02.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_pnpm_css_loader_6_7_1_webpack_5_74_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n  background-color: hotpink;\\n  font-size: 40px;\\n}\\n\\n.image-bg {\\n  display: flex;\\n  border: 1px solid #000;\\n  height: 300px;\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n}\\n\\n.image-bg2 {\\n  border: 1px solid #000;\\n  height: 300px;\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n}\\n\\nimg {\\n  width: 140px;\\n  height: 40px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack/./13-customLoader/style.scss?./node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js!./node_modules/.pnpm/sass-loader@13.0.2_sass@1.54.9+webpack@5.74.0/node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./13-customLoader/image/bg_02.png":
+/*!*****************************************!*\
+  !*** ./13-customLoader/image/bg_02.png ***!
+  \*****************************************/
+/***/ (function(module) {
+
+eval("module.exports = \"https://img1.baidu.com/it/u=3286787633,3266085819&fm=253&fmt=auto&app=138&f=JPEG?w=670&h=447\"\n\n//# sourceURL=webpack://webpack/./13-customLoader/image/bg_02.png?");
+
+/***/ }),
+
+/***/ "./13-customLoader/image/bilibili.png":
+/*!********************************************!*\
+  !*** ./13-customLoader/image/bilibili.png ***!
+  \********************************************/
+/***/ (function(module) {
+
+eval("module.exports = \"data:image/png;base64,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\"\n\n//# sourceURL=webpack://webpack/./13-customLoader/image/bilibili.png?");
 
 /***/ }),
 

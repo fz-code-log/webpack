@@ -18,6 +18,7 @@ specifiers:
   loader-utils: ^3.2.0
   mini-css-extract-plugin: ^2.6.1
   optimize-css-assets-webpack-plugin: ^6.0.1
+  over-url-loader: ^1.0.0
   postcss: ^8.4.16
   postcss-loader: ^7.0.1
   postcss-preset-env: ^7.8.2
@@ -53,6 +54,7 @@ devDependencies:
   loader-utils: 3.2.0
   mini-css-extract-plugin: 2.6.1_webpack@5.74.0
   optimize-css-assets-webpack-plugin: 6.0.1_webpack@5.74.0
+  over-url-loader: 1.0.0
   postcss: 8.4.16
   postcss-loader: 7.0.1_qjv4cptcpse3y5hrjkrbb7drda
   postcss-preset-env: 7.8.2_postcss@8.4.16
@@ -3600,6 +3602,12 @@ packages:
   /os-tmpdir/1.0.2:
     resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /over-url-loader/1.0.0:
+    resolution: {integrity: sha512-jv3t3tGI1+PKw3BpD5Abrelnq04aVCnC+ZfThrSUlJnMt4RX1yocg9F6yhf7oZQ/J4KU8Lal4E88jgtrIDVVAA==}
+    dependencies:
+      loader-utils: 3.2.0
     dev: true
 
   /p-limit/2.3.0:
