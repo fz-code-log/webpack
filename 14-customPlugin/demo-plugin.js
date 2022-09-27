@@ -1,9 +1,3 @@
-const {
-  resolve
-} = require("core-js/es6/promise");
-const {
-  reject
-} = require("core-js/fn/promise");
 
 class demoPlugin {
   static defaultOptions = {
@@ -20,21 +14,21 @@ class demoPlugin {
   apply(compiler) {
 
     // 同步
-    compiler.hooks.compilation.tap('demoPlugin', (compilation) => {
-      // dosomthing
-    });
-    
-    compiler.hooks.emit.tapAsync('demoPlugin', (compilation, callback) => {
-      // dosomthing
-      callback();
-    })
+    // compiler.hooks.compilation.tap('demoPlugin', (compilation) => {
+    //   // dosomthing
+    // });
 
-    compiler.hooks.emit.tapAsync('demoPlugin', (compilation) => {
-      return new Promise((resolve, reject) => {
-        // dosomthing
-        resolve();
-      })
-    })
+    // compiler.hooks.emit.tapAsync('demoPlugin', (compilation, callback) => {
+    //   // dosomthing
+    //   callback();
+    // })
+
+    // compiler.hooks.emit.tapAsync('demoPlugin', (compilation) => {
+    //   return new Promise((resolve, reject) => {
+    //     // dosomthing
+    //     resolve();
+    //   })
+    // })
 
 
 

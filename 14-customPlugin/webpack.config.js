@@ -3,7 +3,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { resolve } = require('path')
 const { FileListPlugin } = require('./file-list-plugin.js');
-const { demoPlugin } = require('./demo-plugin.js');
+// const { demoPlugin } = require('./demo-plugin');
 
 module.exports = {
   mode: 'development',
@@ -60,6 +60,6 @@ module.exports = {
       template: path.resolve(__dirname, 'index.html')
     }),
     new FileListPlugin(),
-    new demoPlugin({txt:'xxxxx'}),
+    // new demoPlugin({txt:'xxxxx'}),
   ]
 }
