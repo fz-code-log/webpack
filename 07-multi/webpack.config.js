@@ -13,7 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash:6].js',
     clean: true, // 构建前是否清空输出目录
-    // publicPath: '',// 资源引入公共路径前缀
+    publicPath: 'xxx',// 资源引入公共路径前缀
     // chunkFileName: 'js/[name]_chunk.js',// 非入口chunk的名称
     // library:'jquery', // 作为库构建, 库名称
     // libraryTarget :'window' // 作为库构建, 库挂载到什么对象上 浏览器:window; node:golbal; ...
@@ -27,7 +27,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'login.html',
-      chunks: ['login'],
+      // chunks: ['login'],
       title: '登录',
       template: path.resolve(__dirname, 'public.html')
     })

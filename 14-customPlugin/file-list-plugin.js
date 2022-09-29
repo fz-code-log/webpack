@@ -2,7 +2,6 @@ class FileListPlugin {
   static defaultOptions = {
     outputFile: 'assets.md',
   };
-
   // Any options should be passed in the constructor of your plugin,
   // (this is a public API of your plugin).
   constructor(options = {}) {
